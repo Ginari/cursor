@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blinking Cursor PWA</title>
+    <title>Terminal PWA</title>
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <input type="text" class="blinking-cursor" autofocus>
+        <div class="terminal">
+            <div class="output"></div>
+            <div class="input-line">
+                <span class="prompt">$</span>
+                <input type="text" class="input-cursor" autofocus>
+            </div>
+        </div>
     </div>
     <script src="app.js"></script>
 </body>

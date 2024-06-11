@@ -1,6 +1,6 @@
 {
-    "name": "Blinking Cursor PWA",
-    "short_name": "Cursor",
+    "name": "Terminal PWA",
+    "short_name": "Terminal",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#000000",

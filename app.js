@@ -7,3 +7,18 @@ if ('serviceWorker' in navigator) {
         });
     });
 }
+
+// Handle terminal input
+document.querySelector('.input-cursor').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        const input = event.target;
+        const output = document.querySelector('.output');
+        const inputValue = input.value;
+
+        if (inputValue) {
+            output.innerHTML += `<div><span class="prompt">$</span> ${inputValue}</div>`;
+            input.value = '';
+            output.scrollTop = output.scrollHeight;
+        }
+    }
+});

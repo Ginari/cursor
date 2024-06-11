@@ -16,17 +16,42 @@ body, html {
     align-items: center;
     justify-content: center;
     height: 100%;
+    width: 100%;
 }
 
-.blinking-cursor {
+.terminal {
+    background-color: #000;
+    color: #fff;
+    width: 80%;
+    max-width: 800px;
+    height: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+}
+
+.output {
+    flex: 1;
+    overflow-y: auto;
+    white-space: pre-wrap;
+}
+
+.input-line {
+    display: flex;
+    align-items: center;
+}
+
+.prompt {
+    margin-right: 10px;
+}
+
+.input-cursor {
     background: transparent;
     border: none;
-    border-right: 2px solid #fff;
     color: #fff;
-    font-size: 24px;
+    font-size: 18px;
     outline: none;
-    width: 50%;
-    text-align: center;
+    width: 100%;
     animation: blink 1s step-end infinite;
 }
 
